@@ -1,6 +1,6 @@
 FROM google/cloud-sdk:196.0.0-alpine
 
-RUN apk update
-RUN apk upgrade
-RUN apk add bash
-RUN gcloud components install kubectl
+# install bash
+RUN apk update && apk upgrade && apk add bash
+# install kubectl
+RUN gcloud components install kubectl --no-user-output-enabled --quiet
