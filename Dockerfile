@@ -1,4 +1,4 @@
-FROM google/cloud-sdk:203.0.0-alpine
+FROM google/cloud-sdk:206.0.0-alpine
 
 # install bash
 RUN apk update && apk upgrade && apk add bash
